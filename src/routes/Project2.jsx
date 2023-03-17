@@ -6,6 +6,7 @@ import CourseWrapper from "../components/project2/CourseWrapper";
 import Header from "../components/project2/Header";
 import News from "../components/project2/News";
 import People from "../components/project2/People";
+import Requests from "../components/project2/Requests";
 import Sertificates from "../components/project2/Sertificates";
 
 const Project2 = () => {
@@ -18,6 +19,7 @@ const Project2 = () => {
       <People />
       <News />
       <Sertificates />
+      <Requests />
     </Box>
   );
 };

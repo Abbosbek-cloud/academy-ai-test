@@ -1,4 +1,11 @@
-import { Box, Button, Stack, styled, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Stack,
+  styled,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 export const StyledLinkComponent = styled("a")(({ theme }) => ({
   fontFamily: "Allerta Stencil",
@@ -91,6 +98,24 @@ export const StyledButtonContained = styled(Button)(() => ({
   padding: "36px 68px",
 }));
 
+export const StyledButtonContainedReq = styled(Button)(() => ({
+  border: "3px solid rgba(206, 51, 51, 1)",
+  "&:hover": {
+    background:
+      "linear-gradient(87.05deg, #F4013D 17.99%, #F0073E 43%, #F1013B 68.01%, #D90E3C 93.02%)",
+    boxShadow:
+      "0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919",
+  },
+  borderRadius: "20px",
+  fontFamily: '"Laviossa RUS"',
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "22px",
+  lineHeight: "158.7%",
+  textAlign: "center",
+  color: "#EAE9E9",
+}));
+
 export const StyledButtonOutlined = styled(StyledButtonContained)(() => ({
   border: "rgba(206, 51, 51, 1)",
 }));
@@ -152,4 +177,38 @@ export const CourseTypo = styled(Typography)(({ fontSize }) => ({
   "-webkit-text-fill-color": "transparent",
   backgroundClip: "text",
   "text-fill-color": "transparent",
+}));
+
+export const StyledInputBase = styled(TextField)(() => ({
+  background: "#202020",
+  border: "4px solid rgba(255, 255, 255, 0.29)",
+  borderRadius: "20px",
+  "& .MuiOutlinedInput-root": {
+    border: "none",
+    "&:hover fieldset": {
+      border: "none",
+    },
+    "&:focus fieldset": {
+      border: "none",
+    },
+    "&:blur fieldset": {
+      border: "none",
+    },
+  },
+  input: {
+    "&::placeholder": {
+      fontFamily: "'Allerta Stencil'",
+      fontStyle: "normal",
+      fontWeight: 400,
+      fontSize: "22px",
+      lineHeight: "158.7%",
+      color: "#FFFFFF",
+    },
+    fontFamily: "'Allerta Stencil'",
+    fontStyle: "normal",
+    fontWeight: 400,
+    fontSize: "22px",
+    lineHeight: "158.7%",
+    color: "#FFFFFF",
+  },
 }));
