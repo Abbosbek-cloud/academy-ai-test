@@ -13,7 +13,7 @@ import {
 const Header = () => {
   return (
     <>
-      <Stack position="fixed" top={0} left={0} zIndex={3} width="100%">
+      <Stack position="absolute" top={0} left={0} zIndex={3} width="100%">
         <Container>
           <StyledStack
             display="flex"
