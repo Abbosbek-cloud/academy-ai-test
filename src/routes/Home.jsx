@@ -20,12 +20,6 @@ const Home = () => {
         </div>
         <div className="cards_container">
           <Card
-            name="1-topshiriq"
-            img="/project1.png"
-            info="1-topshiriq uchun tayyorlangan sahifa"
-            link="/project1"
-          />
-          <Card
             name="2-topshiriq"
             img="/project2.png"
             info="2-topshiriq uchun tayyorlangan sahifa"
