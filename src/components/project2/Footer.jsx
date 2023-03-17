@@ -16,6 +16,10 @@ import {
   StyledEdu,
   StyledImage2,
 } from "./StyledComponents";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const StyledTypoNumber = styled(Typography)(() => ({
   fontFamily: "'Montserrat'",
@@ -81,15 +85,19 @@ const Footer = () => {
               dictumst ullamcorper nulla.
             </CourseTypo>
           </Grid>
-          <Grid item xs={12} md={3}>
-            {first.map((item, index) => {
-              return <ListItem key={index} name={item} />;
-            })}
+          <Grid item xs={12} md={3} justifyContent="center">
+            <Box>
+              {first.map((item, index) => {
+                return <ListItem key={index} name={item} />;
+              })}
+            </Box>
           </Grid>
-          <Grid item xs={12} md={3}>
-            {second.map((item, index) => (
-              <ListItem key={index} name={item} />
-            ))}
+          <Grid item xs={12} md={3} justifyContent="center">
+            <Box>
+              {second.map((item, index) => (
+                <ListItem key={index} name={item} />
+              ))}
+            </Box>
           </Grid>
           <Grid item xs={12} md={3}>
             <Stack direction="column" gap="15px">
@@ -101,10 +109,18 @@ const Footer = () => {
                 Перезвоните нам
               </StyledButtonContainedReq>
               <Stack direction="row" gap="10px">
-                <IconWrapper></IconWrapper>
-                <IconWrapper></IconWrapper>
-                <IconWrapper></IconWrapper>
-                <IconWrapper></IconWrapper>
+                <IconWrapper>
+                  <FacebookIcon sx={{ color: "#F4013D" }} />
+                </IconWrapper>
+                <IconWrapper>
+                  <TwitterIcon sx={{ color: "#F4013D" }} />
+                </IconWrapper>
+                <IconWrapper>
+                  <InstagramIcon sx={{ color: "#F4013D" }} />
+                </IconWrapper>
+                <IconWrapper>
+                  <LinkedInIcon sx={{ color: "#F4013D" }} />
+                </IconWrapper>
               </Stack>
             </Stack>
           </Grid>
