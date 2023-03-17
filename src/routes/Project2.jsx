@@ -4,6 +4,9 @@ import AboutUs from "../components/project2/AboutUs";
 import CardsWrapper from "../components/project2/CardsWrapper";
 import CourseWrapper from "../components/project2/CourseWrapper";
 import Header from "../components/project2/Header";
+import News from "../components/project2/News";
+import People from "../components/project2/People";
+import Sertificates from "../components/project2/Sertificates";
 
 const Project2 = () => {
   return (
@@ -12,6 +15,9 @@ const Project2 = () => {
       <AboutUs />
       <CardsWrapper />
       <CourseWrapper />
+      <People />
+      <News />
+      <Sertificates />
     </Box>
   );
 };
