@@ -136,7 +136,6 @@ export const GeneralHeaderComponent = styled(Typography)(() => ({
 
 export const StyledCourseCard = styled(Box)(() => ({
   width: "100%",
-  height: "400px",
   padding: "10px",
   border: "1px solid rgba(238, 4, 59, 1)",
   borderRadius: "20px",

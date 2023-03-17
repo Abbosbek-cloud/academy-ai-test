@@ -1,7 +1,10 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Stack } from "@mui/material";
 import React from "react";
 import Course from "./Course";
-import { GeneralHeaderComponent } from "./StyledComponents";
+import {
+  GeneralHeaderComponent,
+  StyledButtonContained,
+} from "./StyledComponents";
 
 const CourseWrapper = () => {
   return (
@@ -14,6 +17,13 @@ const CourseWrapper = () => {
           </Grid>
         ))}
       </Grid>
+      <Stack display="flex" alignItems="center" justifyContent="center">
+        <StyledButtonContained
+          sx={{ padding: "16px 35px", margin: "20px auto" }}
+        >
+          ВСЕ КУРСЫ
+        </StyledButtonContained>
+      </Stack>
     </Container>
   );
 };

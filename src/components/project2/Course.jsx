@@ -1,6 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import React from "react";
 import { CourseTypo, StyledCourseCard } from "./StyledComponents";
+import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 
 const Course = ({ img, count, name, info }) => {
   return (
@@ -14,8 +15,29 @@ const Course = ({ img, count, name, info }) => {
           {count} <br /> марта
         </CourseTypo>
       </Stack>
-      <Stack>
+      <Stack py={1}>
         <CourseTypo fontSize="15px">{info}</CourseTypo>
+      </Stack>
+      <Stack display="flex" direction="row" justifyContent="flex-end">
+        <Box
+          sx={{
+            width: "20px",
+            height: "20px",
+            background:
+              "linear-gradient(180deg, #F3023E 0%, #F0073E 50%, #A10C2E 100%)",
+            borderRadius: "50%",
+            position: "relative",
+          }}
+        >
+          <TrendingFlatIcon
+            sx={{
+              position: "absolute",
+              right: "8px",
+              bottom: "-1px",
+              color: "#fff",
+            }}
+          />
+        </Box>
       </Stack>
     </StyledCourseCard>
   );
