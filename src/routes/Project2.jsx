@@ -3,6 +3,7 @@ import React from "react";
 import AboutUs from "../components/project2/AboutUs";
 import CardsWrapper from "../components/project2/CardsWrapper";
 import CourseWrapper from "../components/project2/CourseWrapper";
+import Footer from "../components/project2/Footer";
 import Header from "../components/project2/Header";
 import News from "../components/project2/News";
 import People from "../components/project2/People";
@@ -20,6 +21,7 @@ const Project2 = () => {
       <News />
       <Sertificates />
       <Requests />
+      <Footer />
     </Box>
   );
 };

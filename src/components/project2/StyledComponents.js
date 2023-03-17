@@ -46,6 +46,11 @@ export const StyledImage = styled("img")(() => ({
   height: "50px",
 }));
 
+export const StyledImage2 = styled("img")(() => ({
+  width: "80px",
+  height: "80px",
+}));
+
 export const HeadTypo = styled(Typography)(({ textAlign }) => ({
   fontFamily: '"Laviossa RUS"',
   fontStyle: "normal",
@@ -166,12 +171,12 @@ export const StyledCourseCard = styled(Box)(() => ({
   borderRadius: "20px",
 }));
 
-export const CourseTypo = styled(Typography)(({ fontSize }) => ({
+export const CourseTypo = styled(Typography)(({ fontSize, lineHeight }) => ({
   fontFamily: "'Laviossa RUS'",
   fontStyle: "normal",
   fontWeight: 500,
   fontSize,
-  lineHeight: "117.2%",
+  lineHeight: lineHeight || "117.2%",
   background: "linear-gradient(0deg, #FFFFFF, #FFFFFF)",
   "-webkit-background-clip": "text",
   "-webkit-text-fill-color": "transparent",
@@ -211,4 +216,14 @@ export const StyledInputBase = styled(TextField)(() => ({
     lineHeight: "158.7%",
     color: "#FFFFFF",
   },
+}));
+
+export const StyledEdu = styled(Typography)(() => ({
+  fontFamily: "'DM Sans'",
+  fontStyle: "normal",
+  fontWeight: 700,
+  fontSize: "30px",
+  lineHeight: "39px",
+  color: "#F4013D",
+  margin: "20px 0",
 }));

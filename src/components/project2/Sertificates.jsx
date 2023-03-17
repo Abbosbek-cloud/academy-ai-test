@@ -12,13 +12,13 @@ const Sertificates = () => {
           {data.map((item, indx) => {
             if (indx !== 1) {
               return (
-                <Grid item xs={12} md={3} mt={4}>
+                <Grid item key={item} xs={12} md={3} mt={4}>
                   <Person img={item} isOnTop={false} />
                 </Grid>
               );
             } else {
               return (
-                <Grid item xs={12} md={3}>
+                <Grid item key={item} xs={12} md={3}>
                   <Person img={item} isOnTop={true} />
                 </Grid>
               );
